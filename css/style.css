@@ -94,7 +94,7 @@ a{
 
 .first-section{
   height: 550px;
-  background-image: url(../img/background-first-section.PNG);
+  background-image: url(../img/background-first-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -395,7 +395,7 @@ div#all {
   border-top: 1.6px solid #000 ;
   }
 .footer-wrap-block{
-  background-image: url(../img/footer-bg.PNG);
+  background-image: url(../img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -484,14 +484,14 @@ div#all {
     font-size: 18px;
   }
   .swiper-container{
-   height: 290px;
+   height: 340px;
   }
   .swiper-container-modal{
     height: 320px;
   }
   .contacts address,
   .contacts a{
-  font-size: 15px;
+  font-size: 20px;
   }
   .inst-img, .fb-img{
     height: 50px;
@@ -553,7 +553,7 @@ div#all {
   }
   .yandexmap{
   width: 100%;
-  height: 260px;
+  height: 245px;
   }
   .contacts{
     width: 60%;
@@ -656,6 +656,7 @@ div#all {
     width: 75%;
   }
   .swiper-container {
-    height: 210px;
+    width: 100%;
+    height: 230px;
   }
 }
