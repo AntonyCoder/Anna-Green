@@ -18,10 +18,10 @@ var map;
 var marker;
 function initMap() {
   map = new ymaps.Map("yandexmap", {
-    center: [47.256926, 38.893710],
-    zoom: 16
+    center: [47.255866, 38.893980],
+    zoom: 18
   });
-  marker = new ymaps.Placemark([47.256926, 38.893710], {
+  marker = new ymaps.Placemark([47.255866, 38.893980], {
   });
   map.geoObjects.add(marker);
 }
