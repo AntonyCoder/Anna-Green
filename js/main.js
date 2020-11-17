@@ -47,3 +47,13 @@ jQuery(function ($) {
     }
   });
 });
+// показывать карту когда докрутили до нее
+var services = $('.services');
+var servicesTop = services.offset().top;
+$(window).bind('scroll', function () {
+  var windowTop = $(this).scrollTop();
+  if (windowTop > servicesTop) {
+    $('yandexmap').html('< div id = "yandexmap" class= "yandexmap" ></div >')
+    $(window).unbind('scroll')
+  }
+});
