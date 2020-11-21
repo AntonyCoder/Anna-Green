@@ -1,5 +1,6 @@
 @font-face{
   font-family: 'GreycliffCF-Light';
+  font-display: swap;
   src: local('GreycliffCF-Light'), url(../fonts/GreycliffCF-Light.ttf);
 }
 *{
@@ -14,29 +15,41 @@ a{
   color: #000000;
   text-decoration: none;
 }
-.header-1st{
+.header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
+  padding: 20px 5px 10px 0;
 }
-.main-logo{
-  height: 150px;
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 .phone__eng-version{
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .phone-link{
   display: flex;
-  flex-direction: column;
 }
 .phone-link-img{
   display: flex;
   align-items: center;
-  margin-bottom: 7px;
+  margin-right: 5px;
 }
-.phone, .eng-version{
+.phone-link-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin-right: 15px;
+}
+.phone-text-menu{
+  font-size: 16px;
+}
+.eng-version{
   font-size: 20px;
 }
 .phone-link{
@@ -48,34 +61,33 @@ a{
   margin-right: 7px;
 }
 .phone{
-  margin: 0;
-  margin-right: 55px;
+  font-size: 22px;
+}
+.phone-text{
+  font-size: 20px;
 }
 .eng-version{
-  border: #537d1d 3px solid;
+  border: #415028 3px solid;
   background-color: #ffffff;
-  padding: 9px 20px;
+  padding: 8px 15px;
 }
 .eng-version:hover{
-  background-color: #537d1d;
-}
-.navigation{
-  display: flex;
-  justify-content: center;
+  background-color: #415028;
+  color: #ffffff;
 }
 .navigation.fixed{
+  align-items: center;
   position: fixed;
 	top: 0;
   width: 100%;
   background-color: #fff;
-  padding-top: 5px;
+  padding: 15px 0;
   z-index: 99;
 }
 .nav-link{
   text-align: center;
   font-size: 27px;
   position: relative;
-  margin-bottom: 15px;
 }
 .nav-link, .nav-link:after, .nav-link:before{
    transition: all .5s;
@@ -88,18 +100,15 @@ a{
   margin: auto;
   width: 0%;
   content: ' ';
-  color: #537d1d;
-  background: #537d1d;
+  color: #415028;
+  background: #415028;
   height: 1px;
 }
 .nav-link:hover:after{
   width: 100%;
 }
 .nav-link:hover{
-  color: #537d1d;
-}
-.nav-link:not(:last-child){
-  margin-right: 15%;
+  color: #415028;
 }
 
 /* first-section */
@@ -116,7 +125,10 @@ a{
 .white-block{
   max-width: 60%;
   background-color: #fff;
-  padding: 5px 10%;
+  padding: 15px 10%;
+}
+.white-block-eng{
+  padding: 15px 10%;
 }
 .description{
   text-align: center;
@@ -160,8 +172,12 @@ a{
   align-items: center;
   justify-content: space-around;
 }
+.mission-image{
+  display: flex;
+  justify-content: center;
+}
 .mission-img{
-  width: 77%;
+  width: 70%;
 }
 .mission-description{
   max-width: 45%;
@@ -305,7 +321,7 @@ div#all {
   position: relative;
   color: #fff;
   padding: 0px 20px 0px;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 10px;
 }
 
@@ -382,8 +398,8 @@ div#all {
 }
 
 .view-second:hover p {
-  transform: translate(0px, 0px);
-  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 85px);
+  -webkit-transform: translate(0px, 85px);
   transition-delay: 0.4s;
   -webkit-transition-delay: 0.4s;
 }
@@ -426,7 +442,7 @@ div#all {
   height: 400px;
 }
 .contacts{
-  width: 33%;
+  width: 35%;
   color: #ffffff;
   padding: 15px 0;
   display: flex;
@@ -486,16 +502,19 @@ div#all {
     background-size: cover 120%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .nav-link{
     font-size: 24px;
   }
- .phone, .eng-version{
+ .phone, .eng-version, .description, .phone-text{
   font-size: 18px;
 }
-  .description{
-    font-size: 18px;
-  }
+.eng-version{
+  padding: 6px 10px;
+}
+.phone-logo{
+  height: 39px;
+}
   .swiper-container{
    height: 340px;
   }
@@ -513,13 +532,25 @@ div#all {
     height: 50px;
   }
 }
+@media(max-width:830px){
+  .eng-version {
+      padding: 4px 7px;
+  }
+  .phone-logo {
+      height: 33px;
+  }
+  .phone, .eng-version, .phone-text {
+      font-size: 16px;
+  }
+  .nav-link {
+      font-size: 18px;
+  }
+}
 @media (max-width: 790px) {
   .container{
     max-width: 90%; 
   }
-  .nav-link:not(:last-child){
-  margin-right: 7%;
-  }
+
   .first-section{
     height: 400px;
   }
@@ -582,10 +613,14 @@ div#all {
   .container{
     max-width: 83%;
   }
+  .header{
+    justify-content: flex-end;
+    padding: 20px 10px 10px;
+  }
   .phone-logo{
     height: 35px;
   }
-.phone, .eng-version{
+  .phone, .eng-version{
   font-size: 13px;
 }
   .navigation{
@@ -599,15 +634,15 @@ div#all {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 7px;
   }
   .menu-item{
     font-weight: normal;
-    font-size: 36px;
-    line-height: 53px;
+    font-size: 16px;
+    line-height: 45px;
     text-decoration: none;
   }
-  .menu-item:not(:last-child){
+  .menu-item{
     margin-bottom: 7px;
   }
   .mission-img{
@@ -665,23 +700,23 @@ div#all {
   .main-logo{
     height: 100px;
   }
-  .phone__eng-version{
-    flex-direction: column;
-  }
   .phone{
     margin: 0;
   }
   .phone-link{
     margin-bottom: 10px;
   }
+  .phone-link-img{
+    margin-right: 15px;
+  }
   .eng-version{
-    padding: 5px 12px;
+    padding: 5px 9px;
   }
   .about-company{
     margin-bottom: 40px;
   }
   .contacts{
-    width: 75%;
+    width: 101%;
   }
   .swiper-container {
     width: 100%;

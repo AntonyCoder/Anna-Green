@@ -7,7 +7,7 @@
     /*  ширна произвольная, не стесняйтесь экспериментировать */
     width: 300px;
     /* фиксируем и выставляем высоту панели на максимум */
-    height: 345px;
+    height: 270px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -177,7 +177,7 @@ body {
       overflow-x: hidden;
     }
     .nav {
-      width: 300px;
+      width: 270px;
       box-shadow: none
     }
 }

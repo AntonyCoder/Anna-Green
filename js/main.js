@@ -39,10 +39,10 @@ $(function () {
 // зафиксированное меню
 jQuery(function ($) {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 160) {
+    if ($(this).scrollTop() > 75) {
       $('#navigation').addClass('fixed');
     }
-    else if ($(this).scrollTop() < 160) {
+    else if ($(this).scrollTop() < 75) {
       $('#navigation').removeClass('fixed');
     }
   });
