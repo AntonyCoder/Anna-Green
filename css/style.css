@@ -701,7 +701,7 @@ div#all {
     height: 100px;
   }
   .mission-img{
-    height: 200px;
+    height: 100%;
   }
   .phone{
     margin: 0;
