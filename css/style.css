@@ -700,6 +700,9 @@ div#all {
   .main-logo{
     height: 100px;
   }
+  .mission-img{
+    height: 200px;
+  }
   .phone{
     margin: 0;
   }
